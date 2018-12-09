@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat Brush');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.originalPage {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: -7px -7px 10px rgba(20,20,20,0.2);
+    transform: rotate(-7deg);
+}
+
+.page {
+    position: relative;
+}
+
+.page:before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid darkgoldenrod;
+    border-right: 60px solid white;
+    box-shadow: -7px -7px 10px rgba(20,20,20,0.2);
+    border-radius: 5px 1px 0px 1px
+
+}
+.page:after {
+    content: '';
+    position: absolute;
+    bottom: -1%;
+    right: -1%;
+    width: 0px;
+    height: 0px;
+    border-bottom: 67px solid white;
+    border-left: 67px solid transparent;
 }
