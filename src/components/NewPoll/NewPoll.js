@@ -126,7 +126,7 @@ class NewPoll extends Component {
                     <Grid item xs={12}>
                         <Button
                             type='submit'
-                            variant='extendedFab'
+                            variant='extended'
                             color='secondary'
                             disabled={optionA === '' || optionB === ''}
                             onClick={this.handleSubmit}

@@ -18,9 +18,10 @@ class AnsweredPoll extends Component {
         const { classes, poll, authedUser, author, users } = this.props;
 
         const optionOneVotes = poll.optionOne.votes.length;
-        const optionOnePercent = Math.round((optionOneVotes/Object.keys(users).length)*100);
         const optionTwoVotes = poll.optionTwo.votes.length;
-        const optionTwoPercent = Math.round((optionTwoVotes/Object.keys(users).length)*100);
+        const totalOptionVotes = optionOneVotes + optionTwoVotes;
+        const optionOnePercent = Math.round((optionOneVotes/totalOptionVotes)*100);
+        const optionTwoPercent = Math.round((optionTwoVotes/totalOptionVotes)*100);
 
         const yourVoteIsOptionOne = poll.optionOne.votes.includes(authedUser);
 

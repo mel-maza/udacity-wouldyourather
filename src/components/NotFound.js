@@ -65,7 +65,7 @@ class NotFound extends Component {
                     <Button
                         color='primary'
                         size='large'
-                        variant='extendedFab'
+                        variant='extended'
                         type='button'
                     >
                         <Link to="/">Return to Home Page</Link>

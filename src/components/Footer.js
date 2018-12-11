@@ -92,7 +92,7 @@ class Footer extends Component {
                     <Button
                         size='medium'
                         type='button'
-                        variant='extendedFab'
+                        variant='extended'
                         color='secondary'
                         className={classes.button}
                         onClick={this.handleLogout}
@@ -101,7 +101,7 @@ class Footer extends Component {
                     </Button>
                     <Button
                         size='small'
-                        variant='extendedFab'
+                        variant='extended'
                         color="inherit"
                         style={{marginLeft: '10px'}}
                         onClick={this.handleBored}

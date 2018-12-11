@@ -89,7 +89,7 @@ class PollView extends Component {
                         <Grid item>
                             <Button
                                 size='medium'
-                                variant='extendedFab'
+                                variant='extended'
                                 color='secondary'
                                 to={`/questions/${poll.id}`}
                                 component={Link}

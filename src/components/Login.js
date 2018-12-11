@@ -98,7 +98,7 @@ class Login extends Component {
                         <Button
                             color='secondary'
                             size='large'
-                            variant='extendedFab'
+                            variant='extended'
                             type='submit'
                             disabled={authedUserId === ''}
                         >
